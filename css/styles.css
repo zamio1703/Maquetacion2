@@ -182,7 +182,7 @@ body{
 /* Barra lateral */
 #lateral{
     width: 300px;
-    min-height: 1200px;
+    min-height: 810px;
     font-family: "TrebuchetMS";
     float: right;
     margin: 21px;
@@ -332,4 +332,151 @@ aside h3:first-child{
     margin-left: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+/* ###################################### */
+/* Ariculos */
+#articles{
+    width: 860px;
+    float: left;
+}
+#articles h2{
+    display: block;
+    color: #ff6666;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size:40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    background: url('../img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #cc0044, 1px 2px 0px #cc0044, 2px 3px 0px #cc0044, 3px 4px 0px #cc0044;
+    margin: 0px auto;
+    margin-top: 21px;
+    margin-bottom: 28px;
+    border-radius: 6px;
+}
+#articles article{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    padding: 10px;
+    font-family: "TrebuchetMS";
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 2px #ddd;
+}
+#articles article h4{
+    display: block;
+    font-size: 23px;
+    margin: 3px;
+}
+#articles article h4 a{
+    text-decoration: none;
+    color: #cc0044;
+}
+#articles article h4 a:hover{
+    text-decoration: underline;
+    color: #cc0044;
+}
+#articles .data{
+    float: right;
+    background: tomato;
+    color: white;
+    height: 25px;
+    line-height: 26px;
+    margin: -10px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+}
+#articles .data span{
+    margin: 5px;
+}
+#articles article p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+#blog{
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 3px;
+}
+#blog a{
+    display: block;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #cc0044;
+}
+/* ############################################# */
+/* footer */
+#footer{
+    width: 100%;
+    height: 470px;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+/* COlocar los primeros elementos a la izquierda */
+#footer .wrap > div{
+    float: left;
+    width: 320;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+#footer a{
+    text-decoration: none;
+    color: #ff6666;
+    transition: all 300ms;
+}
+#footer h5{
+    display: block;
+    background: url('../img/pxgray.png'), white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: #cc0044;
+    border-radius: 5px;
+    /* margin-bottom: 15px; */
+}
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    list-style:none;
+    list-style-type:none;
+}
+#footer ul li a{
+   display: block;
+   height: 40px;
+}
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+#browsers img{
+    margin-bottom:15px;   
+    width: 50px;
 }
