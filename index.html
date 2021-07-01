@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <title>Maquetacion 2</title>
@@ -8,6 +9,7 @@
     <!-- Hoja de stylos -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
+
 <body>
     <!-- Inicio Cabecera -->
     <header id="header">
@@ -24,20 +26,21 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Formacion</a></li>
-                    <li><a href="#">Contacto</a></li>    
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- Fin Cabecera -->
     <!-- ############### -->
-    <!-- Inicio Banner -->
-    <section class="wrap">
+    <section class="wrap wrap-content">
         <section id="info">
+            <!-- Inicio Banner -->
             <div id="banner">
                 <h1>Bordados Hidalguenses Creaciones Castelan</h1>
-            </div>           
-            <!-- Cartas -->
+            </div>
+            <!-- Fin Banner -->
+            <!-- Tarjetas -->
             <div id="cards">
                 <div class="card">
                     <p class="icon">@</p>
@@ -57,7 +60,7 @@
                     <p class="icon">U</p>
                     <h2 class="category">Clientes</h2>
                     <p class="description">
-                        La prioridad si nuestros clientes 
+                        La prioridad si nuestros clientes
                     </p>
                 </div>
                 <div class="card">
@@ -75,8 +78,52 @@
                     </p>
                 </div>
             </div>
+            <!-- Fin tarjetas -->
         </section>
+        <!-- Inicio Barra lateral -->
+        <!-- Fin Barra lateral -->
+        <aside id="lateral">
+            <h3>Buscar</h3>
+            <div id="search">
+                <form>
+                    <input type="text" />
+                    <input type="button" value="L" class="icon" />
+                </form>
+            </div>
+            <h3>Login</h3>
+            <div id="login" class="aside-box">
+                <form>
+                    <label id="user" class="icon">U</label>
+                    <input type="email" placeholder="Usuario" />
+
+                    <label id="password" class="icon">w</label>
+                    <input type="password" placeholder="Contraseña" />
+
+                    <input type="submit" value="Entrar" />
+                    <input type="reset" value="Limpiar" />
+
+                    <a href="#">Registrate a qui</a>
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                </form>
+            </div>
+            <h3>Redes sociales</h3>
+            <div id="social" class="aside-box">
+                <div class="twitter">
+                    <a href="#" class="icon">t</a>
+                </div>
+                <div class="facebook">
+                    <a href="#" class="icon">f</a>
+                </div>
+                <div class="youtube">
+                    <a href="#" class="icon">y</a>
+                </div>
+            </div>
+            <h3>Patrocinadores</h3>
+            <div id="sponsors"></div>
+        </aside>
+        <!-- ################################################## -->
+       
     </section>
-    <!-- Fin Banner -->
 </body>
+
 </html>
