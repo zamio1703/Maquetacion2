@@ -81,8 +81,8 @@ body{
     margin-left: 26px;
     /* Animacion engrane */
     animation-name: rotate-gear;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-iteration-count: 90s;
     animation-timing-function: linear;
 
 }
@@ -226,6 +226,11 @@ body{
     margin: 21px;
     margin-top: 40px;
     cursor: pointer;
+    transition: all 300ms;
+}
+.card:hover{
+    background: #cc0044;
+    color: white;
 }
 .card:last-child{
     margin-right: 0px;
@@ -239,6 +244,21 @@ body{
     line-height: 110px;
     text-align: center;
     margin: 0px auto;
+    transition: all 300ms;
+}
+.card:hover .icon{
+    color: white;
+    font-size: 70px;
+    animation: showIcon 300ms linear;
+}
+/* Transicion icono entrando de arriba */
+@keyframes showIcon{
+    from{
+        transform:translateY(-200%);
+    }to{
+        transform:translateY(0%);
+    }
+
 }
 .card .category{
     width: 100%;
@@ -248,12 +268,42 @@ body{
     font-weight: bold;
     text-align: center;
     color:#ff4d4d;
+    transition: all 300ms;
+}
+.card:hover .category{
+    color: white;
+    animation: showCategory 400ms linear;
+}
+/* Transicion icono entrando de arriba */
+@keyframes showCategory{
+    from{
+        transform: translateY(-300%);
+        color: rgb(253, 236, 204);
+    }to{
+        transform: translateY(0%);
+        color: white;
+    }
 }
 .card .description{
     font-family: "TrebuchetMS";
     text-align: center;
     color: #737373;
     font-size: 16px;
+    transition: all 300ms;
+}
+.card:hover .description{
+    color: rgb(253, 236, 204);
+    animation: showDescription 400ms linear;
+    font-size: 20px;
+}
+@keyframes showDescription{
+    from{
+        transform: translateX(-300%);
+        color: #cc0044;
+    }to{
+        transform: translateX(0%);
+        color: rgb(252, 236, 207);
+    }
 }
 /* ########################################## */
 /* Barra lateral */
@@ -405,10 +455,34 @@ aside h3:first-child{
     display: block;
     color: brown;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 32px;
     margin-left: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+#social .overlay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+   border: 3px solid white; 
+   box-shadow: 0px 0px 4px #ccc;
+   background: #fef4f4;
+   position: absolute;
+   padding: 5px;
+   margin-left: 70px;
+   margin-top: -53px;
+   /* cursor: pointer; */
+   transform: translateX(-80%);
+   opacity: 0;
+   transition: all 400ms;
+}
+#social div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+    color: #cc0044;
 }
 /* ###################################### */
 /* Ariculos */
@@ -483,6 +557,25 @@ aside h3:first-child{
     line-height: 100px;
     text-align: center;
     border-radius: 3px;
+    transition: all 1s;
+}
+#blog:hover{
+    background-color: brown;
+    border: 6px solid #e90e57;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px gray;
+    animation: blink 10s infinite linear;
+}
+@keyframes blink{
+    0%{
+        border:10px solid red;
+    }25%{
+        border:10px solid orangered;
+    }75%{
+        border:10px solid yellow;
+    }10%{
+        border:10px solid green;
+    }
 }
 #blog a{
     display: block;
@@ -491,6 +584,11 @@ aside h3:first-child{
     letter-spacing: 4px;
     text-decoration: none;
     color: #cc0044;
+    transition: all 1s;
+}
+#blog:hover a{
+    color: white;
+    /* text-shadow: 1px 1px 1px wheat, 1px 2px 1px wheat, 1px 4px 1px wheat, 1px 5px 1px wheat, 1px 6px 1px wheat; */
 }
 /* ############################################# */
 /* footer */
@@ -544,7 +642,13 @@ aside h3:first-child{
 #footer ul li a{
    display: block;
    height: 40px;
+   transition: all 300ms;
 }
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
+ }
 #footer iframe{
     width: 100%;
     height: 300px;
