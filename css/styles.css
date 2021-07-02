@@ -166,6 +166,16 @@ body{
     /* Pocision de imagen en el banner */
     background-position: 200px 320px;
     margin: 20px auto;
+    /* Animacion banner */
+    animation: backBanner 10s linear;
+}
+/* Transicon de banner */
+@keyframes backBanner{
+    0%{
+        background-position: 0px 0px;
+    }100%{
+        background-position: 200px 320px;
+    }
 }
 #banner h1{
     display: block;
@@ -179,6 +189,29 @@ body{
     margin-top: 143px;
     margin-top: 30px;
     text-shadow: 2px 2px 1px wheat;
+    overflow: hidden;
+    /* animacion titulo banner */
+    animation: showText 10s linear;
+}
+@keyframes showText{
+    0%{
+        transform: translateX(-600%);
+        opacity: 1;
+    }50%{
+        /* Texto aumentado con scale*/
+        transform: translateX(600%) scale(3,3);
+        opacity: 1;
+    }75%{
+        transform: translateX(-600%) scale(3,3);
+        /* Ocultar texto */
+        text-shadow: none;
+        opacity: 0;
+    }100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px wheat;
+        color: #ff6666;
+        opacity: 1;
+    }
 }
 /* ################################################ */
 /* Trajetas */
